@@ -1,0 +1,12 @@
+body{
+    font-family: var(--bs-body-font-family);
+}
+nav h1{
+    color: #AAA;
+}
+.cont{
+    background-color:rgb(238, 238, 238);
+}
+footer p{
+    color: #AAA;
+}

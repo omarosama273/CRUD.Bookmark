@@ -1,0 +1,63 @@
+<html>
+
+<head>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+
+  <div class="container">
+
+    <nav class="navbar navbar-expand-lg py-4">
+      <div class="container-fluid">
+        <h1 class="navbar-brand mt-5  ">Bookmarker</h1>
+    </nav>
+    <hr>
+
+    <section class="cont  m-t text-center">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-9 ">
+            <div class="contant ">
+              <h4 class="py-5 fw-bolder">Bookmark your favorite sites</h4>
+              <label for="bookName " class="mb-3 fw-bolder fs-5">Site Name </label>
+              <input type="text" class="form-control form-control-sm" id="sitName" placeholder="Bookmark Name">
+              <div id="nameAlart" class="alert alert-danger p-2 mt-2 d-none">book name sould be have more than 2 and
+                less than 20 characters and start [A-Z] </div>
+              <label for="urlName " class="my-3 fw-bolder fs-5">Site URL </label>
+              <input type="text" class="form-control form-control-sm" id="sitURL" placeholder="Website URL">
+              <div id="urlAlart" class="alert alert-danger p-2 mt-2 d-none">Url Field is required. <br> book URL sould
+                be start http:// or https:// </div>
+              <button id="submitBtn" disabled type="button" class="btn btn-primary my-4">Submit</button>
+              <input onkeyup="search(this.value)" type="text" class="form-control my-4"
+                placeholder="search by name ...">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <table class="table table-striped">
+      <thead>
+      </thead>
+      <tbody id="tableBody"></tbody>
+    </table>
+    <hr>
+    <footer>
+      <div class="container">
+        <p>© 2019 Bookmarker Inc.</p>
+      </div>
+    </footer>
+  </div>
+
+
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
